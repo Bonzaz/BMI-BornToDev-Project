@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apperance.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>BMI Cal</title>
+</head>
+<body>
+    <nav>
+        <!-- หัวข้อ -->
+        <h1>การวัดค่า BMI</h1>
+    </nav>
+
+    <div class="p1">
+        <!-- บทความ 1 -->
+        <header>สาเหตุของภาวะอ้วนลงพุงคืออะไร?</header>
+        <p>สาเหตุที่ทำให้เกิดโรคอ้วนลงพุงยังไม่ระบุแน่ชัด แต่อาจเกิดจากภาวะดื้อต่ออินซูลิน พันธุกรรม อาหารที่รับประทาน<br> หรือแม้แต่พฤติกรรมการใช้ชีวิตประจำวันย่อมส่งผลให้เกิดภาวะอ้วนลงพุงได้</p>
+        <img src="https://mpics.mgronline.com/pics/Images/561000012376901.JPEG">
+    </div>
+
+    <div class="p2">
+        <!-- บทความ 2 -->
+        <header>ปัจจัยเสี่ยงที่ก่อให้เกิดภาวะอ้วนลงพุง</header>
+        <p>ปัจจัยที่ทำให้เกิดภาวะอ้วนลงพุงนั้นมีหลายปัจจัย ไม่ว่าจะเป็น</p>
+        <ol>
+            <li><h2>1.อายุ</h2> เมื่ออายุมากขึ้นระบบการเผาผลาญพลังงานลดลง</li>
+            <li><h2>2.เชื้อชาติ</h2> คนผิวดำมีโอกาสเป็นภาวะอ้วนลงพุงได้มากกว่าคนผิวสีอื่น</li>
+            <li><h2>3.พันธุกรรม</h2> ผู้ที่มีกรรมพันธุ์เป็นโรคเบาหวาน จะมีโอกาสเป็นโรคนี้มากขึ้น หรือคนอ้วนจะมีโอกาสเป็นโรคนี้ได้ง่ายกว่าคนผอม</li>
+        </ol>
+        <p style="margin-top: 20px;">อย่างไรก็ตามพฤติกรรมการใช้ชีวิตก็เป็นอีกปัจจัยหนึ่งที่ทำให้เสี่ยงต่อการเกิดโรคอ้วนลงพุงได้ นอกจากนี้การรับประทานอาหารรสเค็มจัด<br>หวานจัด และการทานอาหารที่ไม่มีประโยชน์ต่อร่างกาย ไม่ออกกำลังกาย ดื่มสุราและพักผ่อนไม่เพียงพอก็นับว่าเป็นปัจจัยเสี่ยงที่อาจก่อให้เกิดภาวะอ้วนลงพุง</p>
+        <br>
+        <a href="https://www.nakornthon.com/article/detail/%E0%B8%AA%E0%B8%B3%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%A7%E0%B8%B0%E0%B8%AD%E0%B9%89%E0%B8%A7%E0%B8%99%E0%B8%A5%E0%B8%87%E0%B8%9E%E0%B8%B8%E0%B8%87%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88" target="_blank">ข้อมูลอ้างอิงจากโรงพยายาลนครธน</a>
+        <hr style="margin-top: 30px;"><br>
+    </div>
+
+    <div class="bmiframe">
+        <!-- โปรแกรมคำนวณ bmi -->
+        <h1>คำนวณค่า BMI</h1>
+        <p>วิธีการตรวจสอบว่ามีภาวะอ้วนลงพุงอยู่หรือไม่ ให้คำนวณหาค่าดัชนีมวลกาย หรือค่า BMI</p>
+        <br>
+
+        <!-- user input -->
+        <h2>กรอกน้ำหนักของคุณ (kg)</h2>
+        <input type="number" min="1" value="1" name="weight" id="weightInput">
+        <br>
+        <h2 style="margin-top: 20px;">กรอกส่วนสูงของคุณ (cm)</h2>
+        <input type="number" min="1" value="1" name="height" id="heightInput">
+
+        <script src="main.js"></script>
+
+        <div class="calculateBtn" onclick="CalculateBMI(document.getElementById('weightInput').value, document.getElementById('heightInput').value)">คำนวณ</div>
+
+        <br>
+        <h3 id="Result"></h3>
+        <p id = "ResultDescription"></p>
+    </div>
+</body>
+</html>

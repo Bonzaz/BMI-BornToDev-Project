@@ -1,0 +1,134 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(9, 40, 40);
+    position: relative;
+}
+
+nav {
+    background-color: rgb(25, 118, 118);
+    position: static;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+nav h1 {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: smaller;
+    display: block;
+    text-align: center;
+}
+
+.p1 header {
+    color: rgb(170, 192, 6);
+    font-size: 50px;
+    font-weight:500;
+    margin-top: 50px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.p1 p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 350px;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.p2 header {
+    color: rgb(170, 192, 6);
+    font-size: 50px;
+    font-weight:500;
+    margin-top: 50px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.p2 p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.p2 ol {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p2 ol li h2{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.bmiframe h1{
+    margin-left: 20px;
+    color: rgb(170, 192, 6);
+    font-weight: 500;
+}
+
+.bmiframe p {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.bmiframe h2{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.bmiframe input {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    border-radius: 5px;
+}
+
+.calculateBtn {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(170, 192, 6);
+    width: 150px;
+    height: 27px;
+    text-align: center;
+    border-radius: 2px;
+    transition: 0.3s;
+    border: 3.5px;
+    border-color: rgb(94, 106, 4);
+}
+
+.calculateBtn:hover {
+    background-color: rgb(94, 106, 4);
+    cursor: pointer;
+}
+
+.bmiframe h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 20px;
+}
